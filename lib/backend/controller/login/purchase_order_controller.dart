@@ -175,12 +175,7 @@ class PurchaseOrderController {
       }
 
       final purchaseOrder = results.first.fields;
-      final orderItems = results.map((row) => row.fields).toList();
-
-      return {
-        'productDetail': purchaseOrder,
-        'orderItems': orderItems,
-      };
+      return purchaseOrder;
     } catch (e) {
       return {};
     } finally {
