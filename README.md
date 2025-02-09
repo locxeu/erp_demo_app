@@ -15,6 +15,13 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+## Application demo:
+
+
+
+https://github.com/user-attachments/assets/06658760-1daa-423d-adbe-bce9b7328f19
+
+
 
 ## Project Structure overview
 Separation-of-concerns is the most important principle to follow when designing your Flutter app. Your Flutter application should split into two broad layers, the UI layer and the Data layer.
