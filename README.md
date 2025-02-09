@@ -16,4 +16,43 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-## Project Structure 
+## Project Structure overview
+Separation-of-concerns is the most important principle to follow when designing your Flutter app. Your Flutter application should split into two broad layers, the UI layer and the Data layer.
+
+Each layer is further split into different components, each of which has distinct responsibilities, a well-defined interface, boundaries and dependencies. This guide recommends you split your application into the following components:
+
+- Views
+- View models
+- Repositories
+- Services
+
+```bash
+lib
+|____ui
+| |____core
+| | |____ui
+| | | |____<shared widgets>
+| | |____themes
+| |____<FEATURE NAME>
+| | |____view_model
+| | | |_____<view_model class>.dart
+| | |____widgets
+| | | |____<feature name>_screen.dart
+| | | |____<other widgets>
+|____domain
+| |____models
+| | |____<model name>.dart
+|____data
+| |____repositories
+| | |____<repository class>.dart
+| |____services
+| | |____<service class>.dart
+| |____model
+| | |____<api model class>.dart
+|____config
+|____utils
+|____routing
+|____main_staging.dart
+|____main_development.dart
+|____main.dart
+```
