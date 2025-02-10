@@ -33,6 +33,9 @@ Each layer is further split into different components, each of which has distinc
 - Repositories
 - Services
 
+![image](https://github.com/user-attachments/assets/cf9842f7-1a6a-4b12-a9b0-1c48122e3da8)
+
+
 ```bash
 lib
 |____ui
