@@ -1,7 +1,8 @@
 import 'package:crypt/crypt.dart';
 import 'package:erp_demo/app/src/ui/home/home_screen.dart';
 import 'package:erp_demo/app/src/ui/register/register_screen.dart';
-import 'package:erp_demo/backend/controller/login/login_controller.dart';
+import 'package:erp_demo/app/src/utils/app_utils.dart';
+import 'package:erp_demo/backend/controller/login_controller/login_controller.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -26,12 +27,14 @@ class _LoginScreenState extends State<LoginScreen> {
     final password = _passwordController.text;
     final isLoginSuccess =
         await LoginController().checkUserLogin(useName, password);
-    if (isLoginSuccess) {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
-      );
+    if (!isLoginSuccess) {
+      AppUtils().showSnackbar(context, "Login failed, please try again");
+      return;
     }
+    Navigator.pushReplacement(
+      context,
+      MaterialPageRoute(builder: (context) => const HomeScreen()),
+    );
   }
 
   @override

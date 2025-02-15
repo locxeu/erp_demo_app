@@ -1,3 +1,4 @@
+import 'package:erp_demo/main.dart';
 import 'package:mysql1/mysql1.dart';
 
 class MySQLService{
@@ -8,11 +9,11 @@ class MySQLService{
   MySQLService._internal();
 
   final ConnectionSettings _settings = ConnectionSettings(
-    host: 'gw.techarrow.asia',
-    port: 30231,
-    user: 'root',
-    password: 'inv3st@Mysql2025',
-    db: 'sonhn',
+    host: flavorSettings.host,
+    port: flavorSettings.port,
+    user: flavorSettings.userName,
+    password: flavorSettings.password,
+    db: flavorSettings.databaseName,
   );
 
   Future<MySqlConnection> connect() async {

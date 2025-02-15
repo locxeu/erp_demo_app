@@ -16,6 +16,7 @@ class SaleOrderDetailScreen extends StatefulWidget {
 class _SaleOrderDetailScreenState extends State<SaleOrderDetailScreen> {
   @override
   void initState() {
+    super.initState();
     context.read<PurchaseOrderProvider>().fetchOrderDetails(widget.orderId);
   }
 

@@ -1,4 +1,4 @@
-import 'package:erp_demo/backend/controller/login/product_controller.dart';
+import 'package:erp_demo/backend/controller/product_controller/product_controller.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {

@@ -2,8 +2,8 @@ import 'dart:ffi';
 import 'package:erp_demo/app/src/data/repositories/purchase_order/purchase_order_repository_remote.dart';
 import 'package:erp_demo/app/src/domain/model/purchase_order/purchase_order.dart';
 import 'package:erp_demo/app/src/domain/model/sale_order/sale_order.dart';
-import 'package:erp_demo/backend/controller/login/product_controller.dart';
-import 'package:erp_demo/backend/controller/login/purchase_order_controller.dart';
+import 'package:erp_demo/backend/controller/product_controller/product_controller.dart';
+import 'package:erp_demo/backend/controller/purchase_controller/purchase_order_controller.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

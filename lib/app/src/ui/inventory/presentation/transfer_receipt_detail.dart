@@ -34,7 +34,7 @@ class _TransferReceiptDetailState extends State<TransferReceiptDetail> {
             children: [
               Consumer<InventoryProvider>(
                 builder: (context, provider, child) {
-                  if (provider.transferReceiptDetail == null) {
+                  if (provider.transferReceiptDetail.isEmpty) {
                     return const Center(
                       child: CircularProgressIndicator(),
                     );

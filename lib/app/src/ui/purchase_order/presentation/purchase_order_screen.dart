@@ -68,7 +68,7 @@ class _PurchaseOrderScreenState extends State<PurchaseOrderScreen> {
                                     decoration: BoxDecoration(
                                       color: order.status == 'RFQ'
                                           ? Colors.transparent
-                                          : const Color.fromARGB(255, 51, 41, 53),
+                                          :  Colors.purple.shade400,
                                       borderRadius: BorderRadius.circular(6),
                                       border: Border.all(color: Colors.grey),
                                     ),

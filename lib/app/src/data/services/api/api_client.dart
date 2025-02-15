@@ -2,8 +2,8 @@ import 'package:erp_demo/app/src/domain/model/inventory/inventory.dart';
 import 'package:erp_demo/app/src/domain/model/purchase_order/purchase_order.dart';
 import 'package:erp_demo/app/src/domain/model/sale_order/sale_order.dart';
 import 'package:erp_demo/app/src/utils/result.dart';
-import 'package:erp_demo/backend/controller/login/inventory_controller.dart';
-import 'package:erp_demo/backend/controller/login/purchase_order_controller.dart';
+import 'package:erp_demo/backend/controller/inventory_controller/inventory_controller.dart';
+import 'package:erp_demo/backend/controller/purchase_controller/purchase_order_controller.dart';
 
 class ApiClient {
   Future<Result<List<Inventory>>> getInventory() async {

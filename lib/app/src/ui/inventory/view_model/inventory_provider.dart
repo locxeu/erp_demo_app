@@ -1,8 +1,8 @@
 import 'package:erp_demo/app/src/data/repositories/inventory/inventory_reposiory_remote.dart';
 import 'package:erp_demo/app/src/data/repositories/inventory/inventory_repository.dart';
 import 'package:erp_demo/app/src/domain/model/inventory/inventory.dart';
-import 'package:erp_demo/backend/controller/login/inventory_controller.dart';
-import 'package:erp_demo/backend/controller/login/purchase_order_controller.dart';
+import 'package:erp_demo/backend/controller/inventory_controller/inventory_controller.dart';
+import 'package:erp_demo/backend/controller/purchase_controller/purchase_order_controller.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'package:flutter/material.dart';

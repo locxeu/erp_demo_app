@@ -1,4 +1,4 @@
-import 'package:erp_demo/backend/controller/login/login_controller.dart';
+import 'package:erp_demo/backend/controller/login_controller/login_controller.dart';
 import 'package:flutter/material.dart';
 
 class RegisterScreen extends StatefulWidget {
